@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>it's Stephan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div id="language-switcher">
+        <span id="btn-de" onclick="switchLanguage('de')">DE</span> |
+        <span id="btn-en" onclick="switchLanguage('en')">EN</span>
+    </div>
+    <div class="container">
+        <h1>Hey, it's Stephan</h1>
+        <h2 data-placeholder="subtitle"></h2>
+        <div class="projects-section">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <img src="img/waypoint_thumbnail.png" alt="Waypoint" class="project-thumbnail">
+                <div class="project-info">
+                    <h3 class="project-title">Waypoint</h3>
+                    <p class="project-description">Ich plane meine Touren gerne mit Apps wie OsmAnd, Locus Map, Mapy, OruxMaps. Und möchte bei der Planung gerne Punkte wie Trinkwasser, WCs oder Reparaturstationen berücksichtigen.</p>
+                    <a href="https://itsstephan.com/waypoint/" target="_blank" class="view-project-btn" data-placeholder="view_project"></a>
+                    <div class="project-details">
+                        <h4 data-placeholder="key_features"></h4>
+                        <p>Es gibt im Web schon viele Klo-Finder, Trinkwasser-Karten, etc. Aber bisher habe ich nichts gefunden, wo ich gezielt Punkte entlang meiner Route finde, und in meiner Karten-App nutzen kann. Deshalb hab ich diese Seite gebaut. Im ersten Tab könnt ihr POIs einfach anschauen und für eure Karten-App exportieren. Aber der spannendere Teil ist der zweite Tab: „Along GPX Track“. Da ladet ihr eure GPX-Route hoch, und bekommt genau die Punkte angezeigt, die entlang der Strecke liegen, ohne Umweg. Die können natürlich auch wieder als GPX-Download in die Karten-App geladen werden. Die Daten kommen aus OpenStreetMap. Wenn was fehlt, kann man es easy z.B. mit der App StreetComplete ergänzen (OSM-Account vorausgesetzt). Ich nutze das Tool inzwischen vor jeder größeren Radtour, oder zu Fuß bei Städtetrips.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-info">
+                    <h3 class="project-title">Klettersteig Finder</h3>
+                    <p class="project-description">Finde Klettersteige in deiner Nähe. Distanz wird nach tatsächlicher Fahrtzeit ermittelt. Eine große Auswahl an Filtern stehen zur Verfügung. Durch die Beschränkung des höchsten Punktes zB kann im Frühjahr die Schneegrenze vermieden werden. Im Hochsommer sind Klettersteige mit nordseitiger Ausrichtung ratsam.</p>
+                    <a href="https://itsstephan.com/klettersteig_finder/" target="_blank" class="view-project-btn" data-placeholder="view_project"></a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="img/album_track_popularity_thumbnail.png" alt="Album Track Popularity" class="project-thumbnail">
+                <div class="project-info">
+                    <h3 class="project-title">Album Track Popularity</h3>
+                    <p class="project-description" data-placeholder="album_track_popularity_description"></p>
+                    <a href="https://itsstephan.com/album_track_popularity/" target="_blank" class="view-project-btn" data-placeholder="view_project"></a>
+                    <div class="project-details">
+                        <h4 data-placeholder="key_features"></h4>
+                        <p data-placeholder="album_track_popularity_features"></p>
+                    </div>
+                    <div class="tech-stack">
+                        <div class="tech-div" data-tech="HTML 5">
+                            <img src="img/html-5.svg" alt="HTML 5" class="tech-icon">
+                        </div>
+                        <div class="tech-div" data-tech="CSS">
+                            <img src="img/css-3.svg" alt="CSS" class="tech-icon">
+                        </div>
+                        <div class="tech-div" data-tech="JavaScript">
+                            <img src="img/javascript.svg" alt="JavaScript" class="tech-icon">
+                        </div>
+                        <div class="tech-div" data-tech="AWS Lambda">
+                            <img src="img/aws-lambda.svg" alt="AWS Lambda" class="tech-icon">
+                        </div>
+                        <div class="tech-div" data-tech="AWS API Gateway">
+                            <img src="img/aws-api-gateway.svg" alt="AWS API Gateway" class="tech-icon">
+                        </div>
+                        <div class="tech-div" data-tech="Spotify API">
+                            <img src="img/spotify-icon.svg" alt="Spotify API" class="tech-icon">
+                        </div>
+                        <div class="tech-div" data-tech="PostgreSQL">
+                            <img src="img/postgresql.svg" alt="PostgreSQL" class="tech-icon">
+                        </div>
+                        <div class="tech-div" data-tech="AWS RDS">
+                            <img src="img/aws-rds.svg" alt="AWS RDS" class="tech-icon">
+                        </div>
+                        <div class="tech-div" data-tech="Git">
+                            <img src="img/git-icon.svg" alt="Git" class="tech-icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-info">
+                    <h3 class="project-title">Music Quote Generator</h3>
+                    <p class="project-description">Search for a song, album or artist, and get a random quote from them.</p>
+                    <a href="https://itsstephan.com/music_quote_generator/" target="_blank" class="view-project-btn" data-placeholder="view_project"></a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="img/boulder_wall_thumbnail.png" alt="Boulder Wall" class="project-thumbnail">
+                <div class="project-info">
+                    <h3 class="project-title">Boulder Wall Gamification</h3>
+                    <p class="project-description" data-placeholder="boulder_wall_description"></p>
+                    <a href="https://itsstephan.com/boulder_wall/" target="_blank" class="view-project-btn" data-placeholder="view_project"></a>
+                    <div class="project-details">
+                        <h4 data-placeholder="key_features"></h4>
+                        <p data-placeholder="boulder_wall_features"></p>
+                    </div>
+                    <div class="tech-stack">
+                        <div class="tech-div" data-tech="HTML 5">
+                            <img src="img/html-5.svg" alt="HTML 5" class="tech-icon">
+                        </div>
+                        <div class="tech-div" data-tech="CSS">
+                            <img src="img/css-3.svg" alt="CSS" class="tech-icon">
+                        </div>
+                        <div class="tech-div" data-tech="JavaScript">
+                            <img src="img/javascript.svg" alt="JavaScript" class="tech-icon">
+                        </div>
+                        <div class="tech-div" data-tech="Git">
+                            <img src="img/git-icon.svg" alt="Git" class="tech-icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-info">
+                    <h3 class="project-title">GPX Navigation</h3>
+                    <p class="project-description">Slim GPX visualizer with the function to show your current GPS location on the map. Ideal for sharing GPX files with people not familiar with the format.</p>
+                    <a href="https://itsstephan.com/navigation/" target="_blank" class="view-project-btn" data-placeholder="view_project"></a>
+                </div>
+            </div>
+        </div>
+        <section id="contact" class="contact-section">
+            <h2 class="contact-header" data-placeholder="contact_me"></h2>
+            <div class="contact-links">
+                <a href="mailto:strauch.aero@gmail.com" class="btn contact-details"><i class="fas fa-at"></i> E-Mail</a>
+                <a href="tel:+49 1525 9672691" class="btn contact-details"><i class="fas fa-mobile-alt"></i> Phone</a>
+            </div>
+        </section>
+
+        <div class="footer">
+            <p>&copy; 2024 itsstephan.com | <a href="impressum.png" style="color:#777" data-placeholder="impressum"></a></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
